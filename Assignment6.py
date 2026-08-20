@@ -26,21 +26,15 @@ def knapsack(weights, values, n, capacity, memo):
             capacity,
             memo
         )
-
         memo[n][capacity] = max(include, exclude)
-
     return memo[n][capacity]
-
 
 weights = [2, 1, 3, 2]
 values = [12, 10, 20, 15]
 
 capacity = int(input("Enter maximum weight: "))
-
 n = len(weights)
-
 memo = [[-1] * (capacity + 1) for _ in range(n + 1)]
-
 result = knapsack(weights, values, n, capacity, memo)
 
 print("Maximum value:", result)
