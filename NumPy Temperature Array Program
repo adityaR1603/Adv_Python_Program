@@ -1,0 +1,25 @@
+import numpy as np
+
+temperatures = np.array([30, 32, 29, 31, 33, 35, 34, 32, 30, 28])
+
+print("Original temperature array:")
+print(temperatures)
+
+print("\nTemperature for the first 3 days:")
+print(temperatures[:3])
+
+print("\nTemperature from day 5 to day 8:")
+print(temperatures[4:8])
+
+print("\nAverage temperature:", np.mean(temperatures))
+
+print("Maximum temperature:", np.max(temperatures))
+
+print("Minimum temperature:", np.min(temperatures))
+
+print("Total temperature:", np.sum(temperatures))
+
+modified_temperatures = temperatures + 2
+
+print("\nModified temperature array (increased by 2°C):")
+print(modified_temperatures)
