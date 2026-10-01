@@ -16,6 +16,5 @@ print("Minimum:", np.min(arr))
 arr = arr + 5
 print("After adding 5:", arr)
 
-
 arr = arr * 2
 print("After multiplying by 2:", arr)
